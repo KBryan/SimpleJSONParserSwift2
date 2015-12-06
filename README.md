@@ -1,7 +1,7 @@
 # SimpleJSONParserSwift2
 Simplifies working with JSON in Swift 2
 Usage:
-
+```
 do {
            jsonData = try NSData(contentsOfFile: NSBundle.mainBundle().pathForResource("Recipes", ofType:".json")!, options:NSDataReadingOptions.DataReadingMapped )
         } catch {
@@ -16,3 +16,4 @@ do {
         } else {
             print("Error: Could not parse JSON. \(jsonError?.localizedDescription)")
         }
+```
